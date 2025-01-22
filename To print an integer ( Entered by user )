@@ -1,0 +1,18 @@
+        //C program to print an integer ( Entered by user )
+
+
+#include<stdio.h>
+#include<conio.h>
+     void main()
+{
+
+    int x;
+
+printf("Enter the value = ");
+
+scanf("%d",&x);
+
+printf("You are enter this value = %d",x);
+
+    getch();
+}
