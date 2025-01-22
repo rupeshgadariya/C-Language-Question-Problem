@@ -1,0 +1,16 @@
+    //C programe to Add two integers
+
+#include<stdio.h>
+#include<conio.h>
+    void main()
+{
+    int a,b;
+printf("Enter the value in A = ");
+scanf("%d",&a);
+printf("Enter the value in B = ");
+scanf("%d",&b);
+
+    printf("Sum of %d and %d = %d",a,b,a+b);
+
+    getch();
+}
