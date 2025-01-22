@@ -1,0 +1,13 @@
+
+        //My first project in c language
+
+#include <stdio.h>
+#include<conio.h>
+void main(){
+    
+    printf("I am Rupesh kuamr \n\"I am BCA student\" ");
+
+
+   
+    getch();
+}
