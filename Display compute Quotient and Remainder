@@ -1,0 +1,20 @@
+    // C program to compute Quotient and Remainder
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+
+        int x,y;
+
+        printf("Enter any value = ");
+        scanf("%d",&x);
+        printf("Divide by ");
+        scanf("%d",&y);
+
+    printf("Question => %d divide by %d \n\rQuotient is %d \n\rRemainder is %d",x,y,x/y,x%y);
+    
+    
+getch();
+}
