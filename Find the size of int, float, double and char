@@ -1,0 +1,22 @@
+    //C program to find the size of int, float, double and char
+    
+    #include<stdio.h>
+    #include<conio.h>
+    
+        void main()
+    {
+    
+            int x;
+            char ch;
+            float f;
+            double d;
+
+          printf("Size of int %zu bytes\n",sizeof(x));
+          printf("Size of char %zu bytes\n",sizeof(ch));
+          printf("Size of float %zu bytes\n",sizeof(f));
+          printf("Size of double %zu bytes\n",sizeof(d));
+
+
+            
+        getch();
+    }
