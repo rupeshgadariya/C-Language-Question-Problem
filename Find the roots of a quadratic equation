@@ -1,0 +1,35 @@
+    //  C program to find the roots of a quadratic equation 
+
+
+#include<stdio.h>
+#include<conio.h>           
+#include<math.h>
+
+    void main()
+{
+   int a,b,c,discriminant,i;
+   float x,x1,x2;              
+     printf("Put in a : ");
+     scanf("%d",&a);
+     printf("Put in b : ");
+     scanf("%d",&b);
+     printf("Put in c : ");
+     scanf("%d",&c);
+
+     discriminant= (b*b)-(4*a*c);
+     
+     if (discriminant>=0)
+     {
+     printf("\nDiscriminant is %d",discriminant);
+       x=sqrt(discriminant);
+       x1 = ((-b) + x)/(2*a);
+       x2 = ((-b) - x)/(2*a);
+       printf("\nValue of x for positive root %.2f \nValue of x for negative root %.2f\n",x1,x2);
+     }
+        else
+        {
+            printf("\nDiscriminant is less than Zero\nThe equation has complex roots\n");
+        }
+  
+    getch();
+}
