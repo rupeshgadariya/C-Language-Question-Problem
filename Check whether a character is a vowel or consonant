@@ -1,0 +1,28 @@
+     //  C program to check whether a character is a vowel or consonant 
+
+
+#include<stdio.h>
+#include<conio.h>
+
+     void main()
+{
+     char c;
+      int lowercase_vowel,uppercase_vowel; 
+     printf("Enter the any alphabet character = ");
+     scanf("%c",&c);
+
+     lowercase_vowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+     uppercase_vowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+
+     if (lowercase_vowel || uppercase_vowel )
+     {
+          printf("%c is vowel character",c);
+     }
+     else
+     {
+          printf("%c is consonant character",c);
+     }
+
+          
+     getch();
+}
