@@ -1,0 +1,22 @@
+    // C program to check leap years 
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+        int a;
+    printf("Enter the year  ");
+    scanf("%d",&a);
+    if (a%4==0)
+    {
+        printf("\n\nIt is a leap year");
+    }
+    else
+    {
+        printf("\n\nIts is a normal year");
+    }
+        
+        
+    getch();
+}
