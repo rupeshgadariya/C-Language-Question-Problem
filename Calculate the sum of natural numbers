@@ -1,0 +1,19 @@
+    //   C program to calculate the sum of natural numbers
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+   int x,i,sum=0;
+   printf("Enter a numer ");
+   scanf("%d",&x);
+
+for ( i = 0; i <= x; i++)
+{
+    sum=sum+i;
+}
+ printf("Sum of first %d natural = %d",x,sum);
+
+    getch();
+}
