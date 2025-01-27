@@ -1,0 +1,21 @@
+    //  C program to generate multiplication table 
+
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+
+        int i=1,x;
+        printf("Enter number to create for table : ");
+        scanf("%d",&x);
+    while (i<=10)
+    {
+     printf("\n%d x %d = %d",x,i,x*i);
+        i++;
+    }
+    
+        
+    getch();
+}
