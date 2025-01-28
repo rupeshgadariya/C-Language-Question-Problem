@@ -1,0 +1,19 @@
+    //  C program to reverse a number 
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{  
+     int x;
+  printf("Which number to reverse ");
+  scanf("%d",&x);
+    for (int i=x; i > 0; i--)
+  
+    {
+       printf("\n%d",i);
+    }
+    
+      
+    getch();
+}
