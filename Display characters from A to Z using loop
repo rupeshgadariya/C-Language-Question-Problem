@@ -1,0 +1,35 @@
+    //  C program to display characters from A to Z using loop
+
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()   {
+    
+    char ch;  int i;
+    
+   printf("ENTER");
+   printf("\n'1' For Capital character");
+   printf("\n'2' For small character");
+   printf("\n\nENTER : ");
+   scanf("%d",&i);
+
+switch (i)
+  {
+  case 1: for ( ch ='A'; ch <='Z'; ch++)
+   {
+    printf("%c ",ch);
+   }
+    break;
+  case 2: for ( ch ='a'; ch <='z'; ch++)
+   {
+    printf("%c ",ch);
+   }
+    break;
+    default :
+    
+    printf("\n!Error!\nPlease enter valid number");
+    break;
+  }
+  
+   getch();      }
