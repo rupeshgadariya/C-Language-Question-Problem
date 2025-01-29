@@ -1,0 +1,53 @@
+    //  C program to make a simple calculator using switch...case
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+
+     printf("ENTER\n\n");
+    printf("1 Add \n2 Substract \n3 Multiply \n4 Divide \n\n");
+   
+    int x,y,c;
+    printf("Choice ");
+    scanf("%d",&c);
+if(c<=4)    
+{
+printf("Enter a integer = ");
+scanf("%d",&x);
+printf("Enter a integer = ");
+scanf("%d",&y);
+}
+
+    switch (c)
+    {
+    case 1: 
+     {       printf("\n\nSum of %d and %d = %d",x,y,x+y);
+             break;
+    }
+    case 2: 
+     {       printf("\n\nSubstrct of %d and %d = %d",x,y,x-y);
+            break;
+        
+    } 
+    case 3:
+    {
+            printf("\n\nProduct of %d and %d = %d",x,y,x*y);
+            break;
+    }
+    case 4: 
+    {
+            printf("\n\nDivide of %d by %d = %d \nRemainder is %d ",x,y,x/y,x%y);
+            break;
+    }
+    
+    default: printf("Please ENTER given Choice");
+        break;
+    
+    }
+        
+        
+        
+    getch();
+}
