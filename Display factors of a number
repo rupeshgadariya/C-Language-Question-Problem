@@ -1,0 +1,28 @@
+    //  C program to display factors of a number 
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+    int x,i=2;
+    printf("Enter a number ");
+    scanf("%d",&x);
+    printf("\nFactor of %d is :",x);
+i=x;
+ while (0<=i<=x)
+    {
+
+if (x%i==0 )
+{      
+    printf(" %d,",x/i);
+}
+        i--;   
+        
+    }
+
+
+
+
+    getch();
+}
