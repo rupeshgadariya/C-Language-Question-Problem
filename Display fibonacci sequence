@@ -1,0 +1,21 @@
+    // C program to display fibonacci sequence
+
+#include<stdio.h>
+#include<conio.h>
+                                            //fibonacci series is 0 1 1 2 3 5 8 13 21 34 55 89.....
+    void main()
+{
+    int x,i=2,a=0,b=1,sum=0;
+    printf("How many term display fibonacci sequence ");
+    scanf("%d",&x);
+  
+    printf("%d %d",a,b);
+   for(i; i<x; i++)
+    {
+        sum=a+b;
+       printf(" %d",sum);
+        a=b,b=sum;
+    }
+    getch();
+}
+       
