@@ -1,0 +1,19 @@
+    //  C program to calculate the power of a number 
+
+#include<stdio.h>
+#include<conio.h>
+
+   void main()
+{ 
+    int a,b,c=1;
+    printf("Enter the number ");
+    scanf("%d",&a);
+    printf("Enter the power of number ");
+    scanf("%d",&b);
+
+    for (int i = 1; i <=b; c=c*a, i++); 
+            
+            printf("%d power of %d = %d",a,b,c);
+
+    getch();
+}    
