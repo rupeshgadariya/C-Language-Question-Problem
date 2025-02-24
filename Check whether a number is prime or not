@@ -1,0 +1,20 @@
+    //  C program to check whether a number is prime or not
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+    int c, flag=0;
+    printf("Enter the number : ");
+    scanf("%d",&c);
+
+    if (c==2)
+         flag=0;
+   else for (int i = 2; i < c; i++)
+       if (c%i==0)
+       flag = ++flag;
+    printf( flag>0? "NOT Prime Number" : "Yes Prime number");
+          
+    getch();
+}
