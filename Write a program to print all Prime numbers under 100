@@ -1,0 +1,22 @@
+// Write a program to print all Prime numbers under 100 
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+        int x=2,count;
+    printf("\nPrint all Prime numbers under 100\n");
+    while (x<=100)
+    {   count=0;
+    for (int i = 2; i <= x; i++)
+     if (x%i==0)
+                count++;
+     
+    if(count==1)
+    printf("%d  ",x);
+     
+         x++;
+    }
+ getch();
+}
