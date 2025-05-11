@@ -1,0 +1,26 @@
+// Write a program to print all Prime numbers between two given numbers 
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+        int x,y,count;
+        printf("Enter two number ");
+        scanf("%d%d",&x,&y);
+    if(y<x)
+        x += y -( y=x );
+    
+    while (x<=y)
+    {   count=0;
+    for (int i = 2; i <= x; i++)
+     if (x%i==0)
+                count++;
+     
+    if(count==1)
+    printf("%d  ",x);
+     
+         x++;
+    } 
+ getch();
+}
