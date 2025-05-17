@@ -1,0 +1,23 @@
+// Write a program to check whether a given number is there in the Fibonacci series or not. 
+
+#include<stdio.h>
+#include<conio.h>
+  
+     void main()
+{    
+        int x,a=-1,b=1,sum=0,count=0;
+        printf("Enter N term of the fibonacci series ");
+        scanf("%d",&x);
+   
+        while(1)
+        {   sum = a+b;
+                            if(x==sum){
+                                count++; break;
+                            }   else if( sum>x)  break;
+           a=b,b=sum;
+        }
+
+    printf( count? "Fibonacci series":"Not Fibonacci series");
+
+    getch();
+}
