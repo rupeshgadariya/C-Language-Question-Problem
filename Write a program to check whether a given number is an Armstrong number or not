@@ -1,0 +1,30 @@
+// Write a program to check whether a given number is an Armstrong number or not 
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+    int num,i, count=0, check=1, result=0,fin;
+    printf("Enter a number to check a Armstrong number ");
+    scanf("%d",&num);
+    i=num; fin=num;
+     while (i)
+                 i=i/10, count++;
+   while (num)
+   {
+        i = num%10;
+        check=1;
+        for( int j =1; j<=count; j++)
+        {
+            check = check * i;
+        }
+            result = result + check;
+        
+        num=num/10;
+   }
+   
+   printf( result==fin? "Armstrong number" : "Not Armstrong number");
+   
+    getch();
+}
