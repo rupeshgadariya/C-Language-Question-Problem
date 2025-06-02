@@ -1,7 +1,7 @@
 /*  Write a menu driven program with the following options: 
    Addition 
    Subtraction 
-   Multiplication 
+   Multiplication
    Division 
    Exit                 */
    #include<stdio.h>
