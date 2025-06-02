@@ -1,0 +1,48 @@
+/*  Write a menu driven program with the following options: 
+   Addition 
+   Subtraction 
+   Multiplication 
+   Division 
+   Exit                 */
+   #include<stdio.h>
+   #include<conio.h>
+   #include<stdlib.h>
+        
+    void main()     
+   {    while(1) {   int num,x,y;   system("cls");    
+    printf(" 1. Addition\n 2. Subtraction\n 3. Multiplication\n 4. Division\n 5. Exit");
+    printf("\nENTER : ");
+    scanf("%d",&num);    
+   
+    switch (num)
+   {
+   case 1:  printf("\nEnter two number ");
+            scanf("%d%d",&x,&y);
+            printf("Sum of %d and %d = %d",x,y,x+y);
+            break;
+            
+   case 2:  printf("\nEnter two number ");
+            scanf("%d%d",&x,&y);
+            printf("Subtract of %d and %d = %d",x,y,x-y);
+            break;
+            
+   case 3:  printf("\nEnter two number ");
+            scanf("%d%d",&x,&y);
+            printf("Multiply of %d and %d = %d",x,y,x*y);
+            break;
+            
+   case 4:  printf("\nEnter two number ");
+            scanf("%d%d",&x,&y);
+            printf("Divide  %d by %d = %d",x,y,x/y);
+            break; 
+            
+   case 5:  
+            exit(5);
+            break;        
+   default:
+        printf("Please Enter Valid number");
+   }
+    getch();
+   }  
+        
+   }
