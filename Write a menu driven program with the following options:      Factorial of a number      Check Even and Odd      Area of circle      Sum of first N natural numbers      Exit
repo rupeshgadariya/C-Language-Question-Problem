@@ -1,0 +1,54 @@
+/*  Write a menu driven program with the following options: 
+    Factorial of a number 
+    Check Even and Odd 
+    Area of circle 
+    Sum of first N natural numbers 
+    Exit                                 */
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+    void main()
+{     while(1) {       system("cls");
+printf("1. Factorial of a number \n2. Check Even and Odd \n3. Area of circle");
+printf("\n4. Sum of first N natural numbers \n5. Exit ");
+             
+                int choice;
+        printf("\nENTER\n");
+        scanf("%d",&choice);
+            int x,fac=1,sum=0;      float y;
+        switch (choice)
+        {
+        case 1:     
+                    printf("Enter a number ");
+                    scanf("%d",&x);
+                    for (int i = 1; i <= x; i++)
+                    fac = fac*i;
+                    printf("Factorial of %d is %d",x,fac);
+                    break;
+        case 2:      
+                    printf("Enter a number ");
+                    scanf("%d",&x);
+                    printf( (x%2)? "Odd number" : "Even number" );
+                    break;
+        case 3:       
+                    printf("Enter a number ");
+                    scanf("%d",&x);
+                    y = 3.14*(x*x);
+                    printf("Area of circle = %.2f",y);
+                    break;
+        case 4:      
+                    printf("Enter N number ");
+                    scanf("%d",&x);
+                    for (int i = 1; i <= x; i++)
+                    sum = sum+i;
+                    printf("Factorial this number is %d",sum);
+                    break;
+        case 5: 
+                    exit(1);
+        default :    printf("Invailed Number");
+            
+        }
+    getch();
+}
+
+}
