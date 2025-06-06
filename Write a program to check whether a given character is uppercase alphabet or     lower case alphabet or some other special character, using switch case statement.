@@ -1,0 +1,23 @@
+/*  Write a program to check whether a given character is uppercase alphabet or
+    lower case alphabet or some other special character, using switch case statement. */
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{         
+        char x;
+        printf("Enter a number ");
+        scanf("%c",&x);
+    switch (x)
+    {
+    case 65 ...90 :     printf("Uppercase alphabet");
+                        break;
+    case 97 ...122 :    printf("Lower case alphabet");
+                        break;
+    case 48 ...57 :     printf("Not alphabet or character");
+                        break;
+    default:    
+        printf("Some other special character");
+    }
+    getch();  
+}      
