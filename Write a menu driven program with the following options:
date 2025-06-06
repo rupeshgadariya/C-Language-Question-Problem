@@ -1,0 +1,74 @@
+/*  Write a menu driven program with the following options: 
+   Calculate LCM of two numbers 
+   Calculate sum of the digits of a number 
+   Volume of a cuboid 
+   Check whether a given number is Prime or not 
+   Exit                                                     */
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+    void main()
+{   while(1)    {
+        system("cls");
+    int num;
+    printf("1. Calculate LCM of two numbers \n2. Calculate sum of the digits of a number");
+    printf("\n3. Volume of a cuboid \n4. Check whether a given number is Prime or not \n5. Exit \nChoose : ");
+    scanf("%d",&num);
+    switch(num)     {
+    case 1: {
+                int a,b,i;
+            printf("Enter two number ");
+            scanf("%d%d",&a,&b);
+            i=a>b?a:b;
+             while (i)
+             {
+                if (i%a==0 && i%b==0)
+                 break;
+                i++;
+             }
+             printf("LCM of given number %d",i);
+             break;
+        }
+    case 2: {
+                int x,sum=0,y;
+                printf("Enter the digit ");
+                scanf("%d",&x);
+
+                while (x)
+                {
+                    y = x%10; sum = sum + y; x = x/10;
+                }
+                    printf("Sum of the digits of a number %d",sum);
+                    break;
+        }
+    case 3: {
+                int w,l,h;
+                printf("Enter a width ");
+                scanf("%d",&w);
+                printf("Enter a lenght "); 
+                scanf("%d",&l);
+                printf("Enter a height ");
+                scanf("%d",&h);
+                        printf("\nVolume of a cuboid %d",w*l*h);
+                        break;
+        }
+    case 4: {     
+                    int flag=0,j=2,m;
+                    printf("Enter a number ");
+                    scanf("%d",&m);
+                    while (j<=m)
+                    {
+                        if (m%j==0)
+                        flag++;  j++;
+                    }
+                    printf( flag==1? "Prime number" : "Not prime number");
+                    break;
+        }
+    case 5:     exit(5);
+
+    default: printf("Enter valid number");
+    }   
+    getch();
+}
+}
