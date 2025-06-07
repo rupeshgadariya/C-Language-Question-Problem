@@ -1,0 +1,19 @@
+    //  C program to find GCD of two numbers 
+
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+        int x=48,y=18,i;
+
+        for ( i = x>y?x:y; 1; i--)
+        {
+          if( x%i==0 && y%i==0 )
+            break;
+        }
+        
+        printf("%d ",i);
+        
+    getch();
+}
