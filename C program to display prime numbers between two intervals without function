@@ -1,0 +1,33 @@
+    //  C program to display prime numbers between two intervals without function
+
+#include<stdio.h>
+#include<conio.h>
+
+ int main()
+ {
+    int num,ber,i,n;
+ 
+    printf("Enter two number ");
+    scanf("%d%d",&num,&ber);
+    n=num>=ber?num:ber;
+    i=num>=ber?ber:num;
+for( i=i+1; i<n; i++) {
+
+    num=0;
+        for( int j=2; j<=i; j++)
+        {
+         if(i==2) 
+         {
+            num++;
+             break; 
+          }
+           if( i%j==0 ) 
+             num++;
+         }  
+           
+           if(num==1)  printf("%d  ",i);
+  
+        
+}
+    getch();
+ }   
