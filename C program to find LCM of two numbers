@@ -1,0 +1,24 @@
+    //   C program to find LCM of two numbers
+
+
+#include<stdio.h>
+#include<conio.h>
+
+    int main()
+{
+    int x,y,i;
+     printf("Enter the two numner ");
+     scanf("%d%d",&x,&y);
+
+     for ( i = x>y?y:x; 1; i++)
+     {
+        if( i%x==0 && i%y==0)
+        break;
+     }
+        printf("%d is LCM of %d %d",i,x,y);
+
+    getch(); 
+}
+ 
+        
+        
