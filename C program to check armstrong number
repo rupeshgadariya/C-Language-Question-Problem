@@ -1,0 +1,38 @@
+//  C program to check armstrong number
+#include<stdio.h>
+
+    int main()
+{
+    int x;
+    int temp, pro, count=0, sum=0, digit;
+    printf("Enter a number ");
+    scanf("%d",&x);
+    temp = x;
+
+    while (temp)
+    {
+        count++;
+        temp = temp/10;
+    }
+       temp = x;
+
+    while (temp)
+    {       digit = temp%10;
+            pro = 1;
+        for (int i =0; i<count; i++)
+         {
+            pro = pro * digit;
+         }
+
+        sum = sum + pro;
+        temp = temp/10;
+    }
+
+    if (sum == x)
+     printf("%d is Armstrong number",x);
+    else
+     printf("%d is not Armstrong number",x);
+     
+           
+    return 0;
+}
